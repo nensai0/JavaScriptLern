@@ -1,7 +1,10 @@
 let year = +prompt('Введіть Ваш рік народження (наприклад: 1998): ');
-let score = (2025 - year);
 
-if (score % 100 >= 11 && score % 100 <= 14) {
+if (isNaN(year) || year >= 2025) {
+    console.log(`Ну то як таке може бути?`);
+} else {
+    let score = (2025 - year);
+    if (score % 100 >= 11 && score % 100 <= 14) {
     console.log(`Вам ${score} лет`);
 } else if (score % 10 === 1) {
     console.log(`Вам ${score} год`);
@@ -10,3 +13,5 @@ if (score % 100 >= 11 && score % 100 <= 14) {
 } else {
     console.log(`Вам ${score} лет`);
 }
+}
+
