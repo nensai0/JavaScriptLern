@@ -18,7 +18,19 @@
 // const arr = [ '123', 'asd'].toSpliced(1, 2, true, '123'); так же как и splice только не трогает оригинальный масив
 // const arr = [ '123', 'asd'].reverse(); переворачивает массив и изменяет оригинальный
 // const arr = [ '123', 'asd'].toReversed(); так же только не изменяет оригинальный
-const arr = Array.of(1, 2, 3, 4);
-
-
-console.log(arr)
+// const arr = Array.of(1, 2, 3, 4);
+// const arr = isArray[1, 2, 3]; 
+// const arr = Array.forEach((curValue, curIndex, originalArray) => {
+//     console.log(curValue)
+//     console.log(curIndex)
+//     console.log(originalArray)
+// });
+// const arr1 = arr.map((curValue, curIndex, originalArray) => {
+//     return curValue +1;
+// });
+// const arr1 = arr.every((curValue) => {
+//     curValue > 0
+// } )
+// const arr1 = arr.some((curValue) => {
+//     curValue > 0
+// } )
