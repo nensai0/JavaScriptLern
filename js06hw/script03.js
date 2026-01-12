@@ -5,13 +5,9 @@ const students = [
 ]; 
 
 function greed () {
-    let result = 0;
-for (const score of students) {
-    result = result + score.grade;
-} 
-    let sum = result / students.length;
-    return sum
+    const grades = students.map(score => score.grade);
+    const result = grades.reduce((a, b) => a + b, 0);
+    return result / students.length;
 }
+
 console.log(greed())
-
-
