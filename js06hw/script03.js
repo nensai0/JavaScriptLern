@@ -4,10 +4,8 @@ const students = [
 { name: "Charlie", age: 19, grade: 4.8 } 
 ]; 
 
-function greed () {
-    const grades = students.map(score => score.grade);
-    const result = grades.reduce((a, b) => a + b, 0);
-    return result / students.length;
-}
+const arr = students.flatMap((cur) => cur.grade);
+const result = arr.reduce((a, b) => a + b, 0);
+const score = result / students.length;
 
-console.log(greed())
+console.log(score)
