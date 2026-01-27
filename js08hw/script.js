@@ -19,6 +19,3 @@ function counter (startValue, step) {
 	    fn.reset = function () { currentValue = startValue; return currentValue; }
     return fn;
 }
-
-// TASK #3
-
